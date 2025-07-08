@@ -14,6 +14,7 @@
 }
 
 .job {
+    text-align: center;
     color: blue;
     font-weight: 900;
 }
@@ -23,19 +24,19 @@
 }
 
 .box {
-    width: 1000px;
+    width: 300px;
     background-color: cadetblue;
     margin: 30px;
     padding: 40px;
-    border: 4px solid black;
     border-radius: 15px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    font-size: 10px;
-    color: red;
+    font-size: 20px;
+    color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
+    box-shadow: 10px 10px 3px 1px black;
+    text-align: center;
 }
 
 /* tag selector라고 부름 */
@@ -44,8 +45,8 @@
 } */
 
 /* id selector라고 부름 */
-/* #special {
+#special {
     text-align: center;
-} */
+}
 
 /* 스타일이 겹칠경우, html파일에 하드코딩한 style > id > class > tag 순으로 우선순위 */
