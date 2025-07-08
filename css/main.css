@@ -1,35 +1,51 @@
 /* class selector라고 부름 */
-.profileImageStyle {
+.profile {
     width: 100px;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-.profileNameStyle {
+.name {
     font-family: 'Times New Roman', Times, serif;
     color: brown;
     text-align: center;
     letter-spacing: 5px;
 }
 
-.profileJobStyle {
+.job {
     color: blue;
     font-weight: 900;
 }
 
-.profileContent {
-    color: bisque;
+.content {
+    text-align: center;
+}
+
+.box {
+    width: 1000px;
+    background-color: cadetblue;
+    margin: 30px;
+    padding: 40px;
+    border: 4px solid black;
+    border-radius: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 10px;
+    color: red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 /* tag selector라고 부름 */
-p {
+/* p {
     text-align: center;
-}
+} */
 
 /* id selector라고 부름 */
-#special {
+/* #special {
     text-align: center;
-}
+} */
 
 /* 스타일이 겹칠경우, html파일에 하드코딩한 style > id > class > tag 순으로 우선순위 */
