@@ -1,0 +1,35 @@
+/* class selector라고 부름 */
+.profileImageStyle {
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profileNameStyle {
+    font-family: 'Times New Roman', Times, serif;
+    color: brown;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.profileJobStyle {
+    color: blue;
+    font-weight: 900;
+}
+
+.profileContent {
+    color: bisque;
+}
+
+/* tag selector라고 부름 */
+p {
+    text-align: center;
+}
+
+/* id selector라고 부름 */
+#special {
+    text-align: center;
+}
+
+/* 스타일이 겹칠경우, html파일에 하드코딩한 style > id > class > tag 순으로 우선순위 */
