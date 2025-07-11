@@ -1,3 +1,18 @@
+.navbar li {
+    display: inline-block;
+    background-color: grey;
+}
+
+.navbar a {
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.navbar a:visited {
+    color: red;
+}
+
 .post {
     display: flex;
     width: 750px;
@@ -11,6 +26,7 @@
 .left_box {
     width: 510px;
     margin-left: 20px;
+    margin-right: 20px;
     margin-top: 20px;
 }
 
