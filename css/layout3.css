@@ -1,0 +1,35 @@
+.main-background {
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/shoes-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* filter: brightness(70%) saturate(150%); */
+    padding-top: 1px;
+    text-align: center;
+}
+
+.main-title {
+    color: white;
+    font-size: 40px;
+    margin-top: 100px;
+}
+
+.main-background p {
+    color: white;
+}
+
+.main-button {
+    padding: 15px;
+    width: 150px;
+    height: 80px;
+    font-size: 20px;
+    border-radius: 10px;
+    position: relative;
+    /* position: fixed;는 스크롤해도 같은위치에 떠있는거 구현가능 */
+    /* position: absolute;는 부모요소중에 position: relative를 주고,
+    이놈 기준으로 특정 위치에 떠있는거 구현가능 */
+    top: 50px;
+    left: 50px;
+}
