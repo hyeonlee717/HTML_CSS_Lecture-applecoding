@@ -60,3 +60,13 @@ body {
     /* 그냥 css파일 처음에 div자체를 box-sizing: border-box; 해놓으면 편함 */
     /* z-index: 5; z축 숫자 높을수록 나와 가까움 */
 }
+
+/* input[type=text] {} 이런식으로 type이 text인 input만 조절가능 */
+.text-input {
+    padding: 10px;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+
+
+}
