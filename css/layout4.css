@@ -1,5 +1,18 @@
-div {
+div,
+input,
+textarea {
     box-sizing: border-box;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    height: 35px;
+    padding: 5px;
+}
+
+textarea {
+    padding: 5px
 }
 
 body {
@@ -10,7 +23,7 @@ body {
     width: 100%;
     max-width: 700px;
     height: 500px;
-    background-color: bisque;
+    background-color: whitesmoke;
     margin-left: auto;
     margin-right: auto;
     padding-top: 11px;
@@ -22,21 +35,14 @@ body {
     display: flex;
 }
 
-.input_email {
-    width: 100%;
-    height: 25px;
-
-}
+.input_email {}
 
 .box_firstname {
     width: 100%;
     margin-right: 10px;
 }
 
-.input_firstname {
-    width: 100%;
-    height: 25px;
-}
+.input_firstname {}
 
 .box_lastname {
     width: 100%;
@@ -44,25 +50,26 @@ body {
 }
 
 
-.input_lastname {
-    width: 100%;
-    height: 25px;
-}
+.input_lastname {}
 
 .input_message {
     width: 100%;
-
-
 }
 
 .box_footer {
     /* background-color: aqua; */
     display: flex;
     margin-top: 20px;
-
 }
 
 .input_subscribecheckbox {}
+
+.label_sub {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 5px;
+    color: grey;
+}
 
 .send_button {
     width: 100px;
@@ -70,9 +77,12 @@ body {
     margin-left: auto;
     margin-top: auto;
     margin-bottom: auto;
+    font-weight: bold;
+    color: whitesmoke;
+    background-color: gold;
+    border: none;
+    border-radius: 5px;
 }
-
-
 
 p {
     font-size: 12px;
