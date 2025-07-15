@@ -31,5 +31,19 @@
     /* position: absolute;는 부모요소중에 position: relative를 주고,
     이놈 기준으로 특정 위치에 떠있는거 구현가능 */
     top: 50px;
-    left: 50px;
+    /* left: 50px; */
+}
+
+.philosophy-background {
+    text-align: center;
+    width: 350px;
+    height: 200px;
+    background-color: gainsboro;
+    position: relative;
+    top: -50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
