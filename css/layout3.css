@@ -1,3 +1,13 @@
+div {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* css파일 만들때 처음 이렇게 해놓으면 편함 */
+
 .main-background {
     width: 100%;
     height: 500px;
@@ -36,14 +46,17 @@
 
 .philosophy-background {
     text-align: center;
-    width: 350px;
+    width: 500px;
     height: 200px;
     background-color: gainsboro;
     position: relative;
     top: -50px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+    border-radius: 10px;
     padding-top: 20px;
     padding-left: 30px;
     padding-right: 30px;
+    /* border-box쓰면 아예 박스 사이즈가 설정한 width, height로 고정됨, padding때문에 더 커지고 그런경우 없음 */
+    /* 그냥 css파일 처음에 div자체를 box-sizing: border-box; 해놓으면 편함 */
+    /* z-index: 5; z축 숫자 높을수록 나와 가까움 */
 }
