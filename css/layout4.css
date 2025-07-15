@@ -7,7 +7,8 @@ body {
 }
 
 .contact_us {
-    width: 350px;
+    width: 100%;
+    max-width: 700px;
     height: 500px;
     background-color: bisque;
     margin-left: auto;
@@ -28,6 +29,7 @@ body {
 }
 
 .box_firstname {
+    width: 100%;
     margin-right: 10px;
 }
 
@@ -37,6 +39,7 @@ body {
 }
 
 .box_lastname {
+    width: 100%;
     margin-left: 10px;
 }
 
@@ -53,6 +56,7 @@ body {
 }
 
 .box_footer {
+    /* background-color: aqua; */
     display: flex;
     margin-top: 20px;
 
@@ -64,6 +68,8 @@ body {
     width: 100px;
     height: 30px;
     margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 
