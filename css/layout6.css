@@ -1,0 +1,138 @@
+div {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+table {
+    border-radius: 10px;
+    border-spacing: 0;
+}
+
+td,
+th {
+    border-bottom: 2px solid #B7CBD5;
+    width: 100px;
+}
+
+th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+
+.background {
+    background-color: #B7CBD5;
+    text-align: center;
+    width: 100%;
+    min-width: 900px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.shopping_cart {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.table_shopping_cart {
+    background-color: white;
+    width: 700px;
+}
+
+.header_item {
+    width: 400px;
+    color: #2e7ba2;
+}
+
+.header_amount {
+    width: 100px;
+    color: #2e7ba2;
+}
+
+/* 테이블의 특정 열(Column)에 스타일 적용 */
+.table_shopping_cart th:nth-child(2),
+.table_shopping_cart tbody td:nth-child(2) {
+    text-align: right;
+    /* 텍스트를 오른쪽으로 정렬합니다 */
+    padding-right: 15px;
+    /* 오른쪽 여백을 추가하여 가독성을 높입니다 */
+}
+
+.header_price {
+    width: 100px;
+    color: #2e7ba2;
+}
+
+/* 테이블의 특정 열(Column)에 스타일 적용 */
+.table_shopping_cart th:nth-child(3),
+.table_shopping_cart tbody td:nth-child(3) {
+    text-align: right;
+    /* 텍스트를 오른쪽으로 정렬합니다 */
+    padding-right: 15px;
+    /* 오른쪽 여백을 추가하여 가독성을 높입니다 */
+}
+
+.header_total {
+    width: 100px;
+    color: #2e7ba2;
+}
+
+/* 테이블의 특정 열(Column)에 스타일 적용 */
+.table_shopping_cart th:nth-child(4),
+.table_shopping_cart tbody td:nth-child(4) {
+    text-align: right;
+    /* 텍스트를 오른쪽으로 정렬합니다 */
+    padding-right: 15px;
+    /* 오른쪽 여백을 추가하여 가독성을 높입니다 */
+}
+
+.box_item {
+    display: flex;
+}
+
+.image_item {
+    display: flex;
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+}
+
+.box_item_description {
+    text-align: left;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 20px;
+    margin-right: auto;
+}
+
+.brand_item {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.name_item {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #2e7ba2;
+}
+
+.row_total {
+    text-align: right;
+    height: 50px;
+    padding-right: 15px;
+    border-bottom: none;
+}
+
+h4 {
+    margin: 3px;
+}
+
+p {
+    margin: 3px;
+}
