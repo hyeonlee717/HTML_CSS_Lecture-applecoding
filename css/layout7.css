@@ -6,12 +6,28 @@ div {
     box-sizing: border-box;
 }
 
+.f-s {
+    font-size: 12px;
+}
+
+.f-m {
+    font-size: 16px;
+}
+
+.f-l {
+    font-size: 20px;
+}
+
+.f-xl {
+    font-size: 24px;
+}
+
 .main-btn {
     padding: 15px;
     width: 150px;
     height: 80px;
-    font-size: 20px;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .bg-red {
