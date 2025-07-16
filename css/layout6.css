@@ -208,6 +208,21 @@ th {
     color: black;
 }
 
+.test-button {
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.bg-red {
+    background-color: red;
+}
+
+.bg-blue {
+    background-color: blue;
+}
+
 h4 {
     margin: 3px;
 }
