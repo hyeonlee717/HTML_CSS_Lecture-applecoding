@@ -136,11 +136,9 @@ th {
     vertical-align: middle;
 }
 
-.edit {
+.link1 {
     margin-top: auto;
     margin-bottom: auto;
-    text-decoration: underline;
-    color: #30486d;
 }
 
 .box_button_pay_method {
@@ -155,7 +153,44 @@ th {
     color: white;
     background-color: #133660;
     border: none;
-    border-radius: 5px
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button_pay_method:hover {
+    background-color: #2e7ba2;
+}
+
+.button_pay_method:focus {
+    background-color: black;
+}
+
+.button_pay_method:active {
+    background-color: #133660;
+    border: 2px solid #2e7ba2;
+
+}
+
+/* 이거 hover, focus, active 순서대로 써야 제대로 동작함, 외우는 방법 hofa 호빠;; */
+
+.test_text {
+    font-size: 20px;
+}
+
+.test_text:hover {
+    font-size: 20px;
+    background-color: antiquewhite;
+}
+
+.test_text:focus {
+    font-size: 20px;
+    background-color: aquamarine;
+    border: 10px solid red;
+}
+
+.test_text:active {
+    font-size: 20px;
+    background-color: blue;
 }
 
 h4 {
