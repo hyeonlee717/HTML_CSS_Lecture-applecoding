@@ -196,10 +196,12 @@ th {
 .link2 {
     text-decoration: none;
     font-size: 30px;
+    cursor: pointer;
 }
 
+
 .link2:link {
-    color: aqua;
+    color: black;
 }
 
 .link2:visited {
