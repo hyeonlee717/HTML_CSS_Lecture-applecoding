@@ -193,6 +193,19 @@ th {
     background-color: blue;
 }
 
+.link2 {
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.link2:link {
+    color: aqua;
+}
+
+.link2:visited {
+    color: black;
+}
+
 h4 {
     margin: 3px;
 }
