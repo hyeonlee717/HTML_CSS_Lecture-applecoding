@@ -129,6 +129,35 @@ th {
     border-bottom: none;
 }
 
+.footer {
+    display: flex;
+
+    margin-top: 20px;
+    vertical-align: middle;
+}
+
+.edit {
+    margin-top: auto;
+    margin-bottom: auto;
+    text-decoration: underline;
+    color: #30486d;
+}
+
+.box_button_pay_method {
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.button_pay_method {
+    width: 250px;
+    height: 50px;
+    color: white;
+    background-color: #133660;
+    border: none;
+    border-radius: 5px
+}
+
 h4 {
     margin: 3px;
 }
