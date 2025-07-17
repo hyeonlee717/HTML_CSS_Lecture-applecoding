@@ -17,7 +17,7 @@ h6 {
 }
 
 .nav-container {
-    width: 75%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     height: 100px;
@@ -25,6 +25,7 @@ h6 {
     background-color: #FF8081;
     align-items: center;
     padding-left: 50px;
+    padding-right: 50px;
 }
 
 .nav-item {
