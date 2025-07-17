@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-container {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+    display: flex;
+    background-color: #FF8081;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.nav-item {
+    padding: 5px;
+    margin: 5px;
+}
+
+.logo {
+    /* background-color: aliceblue; */
+}
+
+.products {
+    /* background-color: beige; */
+}
+
+.services {
+    /* background-color: gainsboro; */
+}
