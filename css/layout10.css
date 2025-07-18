@@ -1,35 +1,60 @@
 .itemlist {
-    background-color: red;
+    /* background-color: red; */
     max-width: 700px;
     margin: auto;
     display: flex;
 }
 
 .item {
-    background-color: blue;
+    /* background-color: blue; */
     padding: 10px;
 }
 
 .item img {
-    background-color: yellow;
     width: 100%;
     display: block;
 }
 
-.overlay {
+.overlay1 {
     background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
     height: 100%;
     position: absolute;
     opacity: 0;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
     display: flex;
     justify-content: center;
     align-items: end;
-    font-size: 50px;
     color: white;
 }
 
-.overlay:hover {
+.item:hover .overlay1 {
     opacity: 1;
+}
+
+.overlay2 {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    top: 100%;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    color: white;
+}
+
+.overlay2 h1,
+.overlay2 p {
+    margin: 0;
+    padding: 0;
+}
+
+
+.item:hover .overlay2 {
+    top: 50%;
 }
