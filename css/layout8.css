@@ -4,6 +4,35 @@
     src: url(../font/NanumSquareR.ttf); 
 } */
 
+.nav-container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+    display: flex;
+    background-color: #FF8081;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.nav-item {
+    padding: 5px;
+    margin: 5px;
+}
+
+.logo {
+    /* background-color: aliceblue; */
+}
+
+.products {
+    /* background-color: beige; */
+}
+
+.services {
+    /* background-color: gainsboro; */
+}
+
 .main-background {
     width: 100%;
     height: 500px;
@@ -53,6 +82,8 @@
     /* 그냥 css파일 처음에 div자체를 box-sizing: border-box; 해놓으면 편함 */
     /* z-index: 5; z축 숫자 높을수록 나와 가까움 */
 }
+
+
 
 div,
 input,
@@ -145,6 +176,7 @@ p {
     color: grey;
 }
 
+/* 안티앨리어싱 */
 p,
 h2,
 h4,
@@ -152,4 +184,48 @@ label {
     transform: rotate(0.03deg);
 }
 
-/* 안티앨리어싱 */
+.product-container {
+    /* background-color: #FF8081; */
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.product-container div {
+    /* background-color: aqua; */
+    flex: 0 0 calc(25% - 15px);
+    text-align: center;
+}
+
+/* 반응형 웹 만드는 방법 */
+/* 1200, 992, 768, 576 */
+@media screen and (max-width: 1200px) {
+    .main-title {
+        font-size: 30px;
+    }
+
+    .nav-item {
+        font-size: 13px;
+    }
+
+    .product-container div {
+        flex: 0 0 calc(50% - 10px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-title {
+        font-size: 20px;
+    }
+
+    .nav-item {
+        font-size: 10px;
+    }
+
+    .product-container div {
+        flex: 0 0 100%;
+    }
+}
