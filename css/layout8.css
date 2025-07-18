@@ -195,9 +195,22 @@ label {
 }
 
 .product-container div {
-    /* background-color: aqua; */
+    background-color: aqua;
     flex: 0 0 calc(25% - 15px);
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.product-container i {
+    background-color: burlywood;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* 반응형 웹 만드는 방법 */
