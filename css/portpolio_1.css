@@ -6,17 +6,13 @@ div {
     box-sizing: border-box;
 }
 
-.wholebox {
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .row1box {
     background: linear-gradient(to top, #4559B4, #358ED3);
-    width: 100%;
+    width: 75%;
     height: 400px;
     display: flex;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .row1box_letterbox {
@@ -52,11 +48,13 @@ div {
 }
 
 .row2box {
-    width: 100%;
+    width: 75%;
     height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .row2box_letterbox {
@@ -66,8 +64,10 @@ div {
 .row3box {
     background-color: #4559B4;
     padding-top: 50px;
-    width: 100%;
-    height: 500px;
+    padding-bottom: 75px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .row3box_letterbox {
@@ -77,8 +77,9 @@ div {
     margin-bottom: 50px;
 }
 
-.servicebox {
+.row3box_servicebox {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     color: white;
@@ -93,7 +94,7 @@ div {
     margin-top: 10px;
 }
 
-.servicebox i {
+.row3box_servicebox i {
     background-color: white;
     width: 100px;
     height: 100px;
@@ -110,11 +111,12 @@ div {
 }
 
 .row4box {
-    width: 100%;
+    width: 75%;
     height: 500px;
     padding-top: 50px;
     margin-bottom: 50px;
-
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .row4box_letterbox {
@@ -124,18 +126,20 @@ div {
 }
 
 .row4box_imgbox {
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
+    overflow: hidden;
 }
 
-.row4box_imgbox img {
+.itemimage {
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.itemimage img {
     width: 100%;
     display: block;
-}
-
-.row4box_imgbox>div {
-    width: 50%;
 }
 
 .overlay {
@@ -146,6 +150,19 @@ div {
     color: white;
     padding-top: 50px;
     padding-left: 50px;
+}
+
+.whiteborderbox {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+    border: 0px solid white;
+}
+
+.itemimage:hover .whiteborderbox {
+    border: 20px solid white;
 }
 
 .row4box_socialbox {
@@ -172,4 +189,78 @@ div {
     text-align: center;
     margin-top: 50px;
     padding-bottom: 50px;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .row1box {
+        width: 100%;
+        height: 600px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .row1box_letterbox {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .iphone-1 {
+        width: 300px;
+        height: 300px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: auto;
+    }
+
+    .row2box {
+        width: 100%;
+    }
+
+    .row3box {
+        width: 100%;
+    }
+
+    .row4box {
+        width: 100%;
+    }
+
+    .row4box_imgbox {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .row4box_imgbox img {
+        width: 100%;
+        display: block;
+    }
+
+    .row4box_imgbox>div {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .row4box {
+        width: 100%;
+    }
+
+    .row4box_imgbox {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .row4box_imgbox img {
+        width: 100%;
+        display: block;
+    }
+
+    .row4box_imgbox>div {
+        width: 100%;
+    }
 }
