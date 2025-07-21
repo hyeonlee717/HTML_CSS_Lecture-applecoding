@@ -1,0 +1,16 @@
+div {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.white_box {
+    background-color: white;
+    box-shadow: 0 0 10px 3px rgb(200, 200, 200);
+    padding: 40px;
+    border: none;
+    border-radius: 10px;
+    height: 100%;
+}
