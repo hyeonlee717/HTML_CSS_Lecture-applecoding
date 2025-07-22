@@ -1,0 +1,60 @@
+.pseudo::first-line {
+    color: red;
+    font-size: 30px;
+}
+
+.pseudo::after {
+    content: 'Hello World';
+}
+
+.pseudo::before {
+    content: 'Hi word ';
+}
+
+input[type=file]::-webkit-file-upload-button {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type=range]::-webkit-slider-runnable-track {}
+
+input[type=range] {
+    appearance: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    appearance: none;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+}
+
+progress {
+    /*기본 배경은 없애주는게 좋습니다*/
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: white;
+    /* IE10 호환성용 */
+    color: red;
+}
+
+progress::-webkit-progress-bar {
+    background-color: black;
+    border-radius: 2px;
+}
+
+progress::-webkit-progress-value {
+    background-color: red;
+    border-radius: 2px;
+}
+
+/*파이어폭스 호환성을 위해*/
+progress::-moz-progress-bar {
+    background-color: red;
+    border-radius: 2px;
+}
