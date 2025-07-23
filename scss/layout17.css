@@ -1,9 +1,45 @@
+body {
+  margin: 0;
+}
+
+div {
+  box-sizing: border-box;
+}
+
 .background {
   background-color: blue;
   font-size: 8px;
 }
 
-.box {
-  background-color: skyblue;
-  font-size: 14px;
+.box, .bluebox, .redbox, .greenbox {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+}
+
+.greenbox {
+  background-color: green;
+}
+
+.redbox {
+  background-color: red;
+}
+
+.bluebox {
+  background-color: brown;
+}
+
+h2 {
+  font-size: 30px;
+  letter-spacing: -1px;
+}
+
+h3 {
+  font-size: 20px;
+  letter-spacing: -1px;
+}
+
+h4 {
+  font-size: 10px;
+  letter-spacing: -1px;
 }/*# sourceMappingURL=layout17.css.map */

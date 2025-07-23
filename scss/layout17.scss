@@ -1,13 +1,48 @@
+@use 'reset';
+
 $main-color: blue;
 $sub-color: skyblue;
 $basic-font-size: 16px;
 
 .background {
     background-color: $main-color;
-    font-size: ($basic-font-size / 2);
+    font-size: calc($basic-font-size / 2);
 }
 
 .box {
-    background-color: $sub-color;
-    font-size: ($basic-font-size - 2px);
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+}
+
+.greenbox {
+    @extend .box;
+    background-color: green;
+}
+
+.redbox {
+    @extend .box;
+    background-color: red;
+}
+
+.bluebox {
+    @extend .box;
+    background-color: reset.$favorite_color;
+}
+
+@mixin 폰트스타일($구멍1) {
+    font-size: $구멍1;
+    letter-spacing: -1px;
+}
+
+h2 {
+    @include 폰트스타일(30px)
+}
+
+h3 {
+    @include 폰트스타일(20px)
+}
+
+h4 {
+    @include 폰트스타일(10px)
 }
