@@ -1,0 +1,12 @@
+.grey {
+    background-color: lightgrey;
+    height: 2000px;
+    margin-top: 500px;
+    display: flex;
+}
+
+.image {
+    position: sticky;
+    top: 100px;
+    height: fit-content;
+}
