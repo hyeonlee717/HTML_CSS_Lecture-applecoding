@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Audio</title>
+    <style>
+        .video-box {
+            height: 1000px;
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .video-container {
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 첫번째 방법 -->
+    <video src="/media/bridge.mp4" controls></video>
+    <!-- 두번째 방법 -->
+    <video controls autoplay muted preload="metadata" poster="/img/author.png" loop>
+        <source src="/media/bridge.mp4" type="video/mp4">
+    </video>
+    <!-- 비디오 배경화면 넣는 법 -->
+    <div class="video-box">
+        <video class="video-container" autoplay muted loop>
+            <source src="/media/bridge.mp4" type="video/mp4">
+        </video>
+        <h3 class="video-title">Buy Our Shoes!</h3>
+    </div>
+    <!-- 첫번째 방법 -->
+    <audio src="/media/bass.mp3" controls muted preload="metadata"></audio>
+    <!-- 두번째 방법 -->
+    <audio controls muted preload="metadata">
+        <source src="/media/bass.mp3">
+    </audio>
+</body>
+
+</html>

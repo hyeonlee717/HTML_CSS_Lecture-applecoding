@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+.ani-text {
+    text-align: center;
+}
+
+.ani-text:hover {
+    animation-name: vib;
+    animation-duration: 1s;
+}
+
+@keyframes vib {
+    0% {
+        transform: translateX(0px);
+    }
+
+    33% {
+        transform: translateX(-100px);
+    }
+
+    66% {
+        transform: translateX(100px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.shake-btn {
+    background-color: aqua;
+    display: block;
+    margin: auto;
+}
+
+.shake-btn:hover {
+    animation-name: shake;
+    animation-duration: 0.5s;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(30deg);
+    }
+
+    50% {
+        transform: rotate(-30deg);
+    }
+
+    75% {
+        transform: rotate(30deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.ani-text2 {
+    width: 100%;
+    width: fit-content;
+    display: block;
+    margin: auto;
+}
+
+.ani-text2:hover {
+    animation-name: magnify;
+    animation-duration: 1s;
+}
+
+@keyframes magnify {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+
+    33% {
+        transform: rotate(-30deg) scale(1);
+
+    }
+
+    66% {
+        transform: rotate(30deg) scale(2);
+    }
+
+    100% {
+        transform: rotate(0deg) scale(1);
+    }
+}
+
+.menu-bg {
+    position: absolute;
+    background-color: black;
+    float: left;
+    color: white;
+    width: 300px;
+    height: 100vh;
+    left: -200px;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-bg:hover {
+    left: 0;
+}
+
+.menu-bg h1 {
+    position: absolute;
+    right: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-bg:hover h1 {
+    right: 110px;
+}
+
+/* .menu-bg p {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-bg:hover p {
+    right: 110px;
+} */
+
+.menu-bg p {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-bg:hover p {
+    animation-name: spring;
+    animation-duration: 1s;
+    transform: translateX(-100px);
+}
+
+@keyframes spring {
+    0% {
+        transform: translateX(0);
+    }
+
+    33% {
+        transform: translateX(-120px);
+    }
+
+    66% {
+        transform: translateX(-80px);
+    }
+
+    100% {
+        transform: translateX(-100px);
+    }
+}
