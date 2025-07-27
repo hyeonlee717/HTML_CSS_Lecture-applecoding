@@ -10,24 +10,68 @@ div {
     background-color: #F9F9F9;
     width: 100%;
     display: flex;
+    position: relative;
 }
 
-.side-bar {
+.sidebar {
     background-color: #4244A6;
-    width: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-items: flex-start;
+    width: 150px;
     height: 100vh;
+    padding-top: 30px;
+    position: fixed;
+    z-index: 1;
+    left: -90px;
+    transition: all 0.3s ease;
+    color: white;
+    gap: 30px 0;
+}
+
+.sidebar:hover {
+    left: 0;
+}
+
+.sidebar>i {
+    margin: 0;
+    width: 60px;
+    background-color: #4244A6;
+    border: none;
+    transition: transform 0.3s ease;
+    transform: translateX(0px);
+}
+
+.sidebar>span {
+    width: 90px;
+    height: auto;
+    margin: 0;
+    text-align: start;
+    transition: transform 0.3s ease;
+    transform: translateX(0px);
+}
+
+.sidebar:hover>i {
+    transform: translateX(-90px);
+}
+
+.sidebar:hover>span {
+    transform: translateX(60px);
 }
 
 .main-content {
     width: 100%;
-    height: 100vh;
+    margin-left: 60px;
+    z-index: 0;
 }
 
 .nav-bar {
     background-color: white;
     width: 100%;
-    height: 50px;
+    height: 60px;
     display: flex;
+    align-items: center;
 }
 
 .dropdown-btn {
@@ -48,6 +92,13 @@ div {
     flex-direction: column;
 }
 
+.dashboard h4 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
 .summary-box {
     background-color: white;
     width: 100%;
@@ -55,8 +106,8 @@ div {
     border: none;
     border-radius: 5px;
     box-shadow: 1px 1px 5px 1px lightgrey;
-    margin-bottom: 20px;
     display: flex;
+    margin-bottom: 20px;
     align-items: center;
     justify-content: space-between;
     padding-left: 20px;
@@ -88,4 +139,66 @@ div {
 
 .requests {
     border-left: 5px solid #FFC358;
+}
+
+.earnings-overview {
+    margin-left: 15px;
+    margin-right: 15px;
+    display: grid;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 1px lightgrey;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    margin-bottom: 30px;
+}
+
+.overview_chart {
+    width: 100%;
+    background-color: white;
+    position: relative;
+}
+
+.earnings-overview div p {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.earnings-overview div {
+    padding: 15px;
+}
+
+.tasks_overview {
+    background-color: transparent;
+    margin: 15px;
+    display: grid;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 1px lightgrey;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+
+.tasks_text {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 15px;
+}
+
+.tasks_text p {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0px;
+}
+
+.tasks_list {
+    background-color: white;
+    border-bottom: 1px solid #d9d9d9;
+    padding: 15px;
+
+}
+
+.tasks_list p {
+    margin: 0;
 }

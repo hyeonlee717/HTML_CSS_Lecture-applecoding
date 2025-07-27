@@ -16,8 +16,18 @@
 <body>
 
     <div class="main-wrapper">
-        <div class="side-bar"> </div>
-        <div class="main-content">
+        <div class="sidebar">
+            <span>Home</span>
+            <i class="fa-solid fa-house fa-2x"></i>
+            <span>Services</span>
+            <i class="fa-solid fa-headphones fa-2x"></i>
+            <span>Alers</span>
+            <i class="fa-solid fa-flag fa-2x"></i>
+            <span>Stats</span>
+            <i class="fa-solid fa-chart-pie fa-2x"></i>
+            <div style="height: 100%;"></div>
+        </div>
+        <div class=" main-content">
             <div class="nav-bar">
                 <button class="dropdown-btn">
                     <i class="fa-solid fa-bars fa-2xl" style="color: #858585;"></i>
@@ -61,6 +71,54 @@
                         <i class="fa-solid fa-comments fa-2xl" style="color: #757575;"></i>
                     </div>
                 </div>
+            </div>
+            <div class="earnings-overview">
+                <div>
+                    <p>Earnings Overview</p>
+                </div>
+                <div class="overview_chart">
+                    <canvas id="myChart"></canvas>
+                </div>
+                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                <script>
+                    const ctx = document.getElementById('myChart');
+
+                    new Chart(ctx, {
+                        type: 'bar',
+                        data: {
+                            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                            datasets: [{
+                                label: '# of Votes',
+                                data: [12, 19, 3, 5, 2, 3],
+                                borderWidth: 1
+                            }]
+                        },
+                        options: {
+                            responsive: true,
+                            maintainAspectRatio: true,
+                            scales: {
+                                y: {
+                                    beginAtZero: true
+                                }
+                            }
+                        }
+                    });
+                </script>
+            </div>
+            <div class="tasks_overview">
+                <div class="tasks_text">
+                    <p>Tasks</p>
+                </div>
+                <div class="tasks_list">
+                    <p>Borrowed Items</p>
+                </div>
+                <div class="tasks_list">
+                    <p>Trello requests</p>
+                </div>
+                <div class="tasks_list">
+                    <p>Marked Comments</p>
+                </div>
+
             </div>
         </div>
     </div>
